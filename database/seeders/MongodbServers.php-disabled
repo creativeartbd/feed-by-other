@@ -1,0 +1,48 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
+class MongodbServers extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        DB::table('mongodb_servers')->insert([
+            [
+                'mongodb_ip'    =>  '127.0.0.1',
+                'mongodb_port'  =>  '8889',
+                'mongodb_user'  =>  'shibbir_laravel',
+                'mongodb_password'  =>  'CommonPassword',
+                'mongodb_db_name'   =>  'shibbir_DB1', 
+                'open'  =>  1, 
+                'created_at'    =>  now(), 
+            ],
+            [
+                'mongodb_ip'    =>  '127.0.0.1',
+                'mongodb_port'  =>  '8889',
+                'mongodb_user'  =>  'shibbir_laravel',
+                'mongodb_password'  =>  'CommonPassword',
+                'mongodb_db_name'   =>  'shibbir_DB2', 
+                'open'  =>  1, 
+                'created_at'    =>  now(), 
+            ],
+            [
+                'mongodb_ip'    =>  '127.0.0.1',
+                'mongodb_port'  =>  '8889',
+                'mongodb_user'  =>  'shibbir_laravel',
+                'mongodb_password'  =>  'CommonPassword',
+                'mongodb_db_name'   =>  'shibbir_DB3', 
+                'open'  =>  1, 
+                'created_at'    =>  now(), 
+            ]
+        ]);
+    }
+}

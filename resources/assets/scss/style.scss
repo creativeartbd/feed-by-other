@@ -1,0 +1,154 @@
+/*================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+[dir="ltr"] .custom-switch .custom-control-input:checked~.custom-control-label::after {
+    -webkit-transform: translateX(1.4rem);
+    transform: translateX(1.4rem);
+}
+
+.custom-switch .custom-control-label::before {
+    width: 3rem;
+}
+
+.custom-switch .custom-control-label::after {
+    top: calc(.225rem + 2px);
+    width: 1rem;
+    height: 1rem;
+}
+
+.v-select.vs--single .vs__selected {
+    cursor: pointer !important;
+}
+
+[dir="ltr"] .vs__actions {
+    cursor: pointer;
+}
+
+.disabledTab {
+    pointer-events: none !important;
+}
+
+.vqb-rule.card {
+    border-color: #ddd !important;
+}
+
+.vqb-group.card.depth-1 {
+    box-shadow: none !important;
+}
+
+.vqb-group.card.depth-2 {
+    border-color: #ddd !important;
+}
+
+#vqb-match-type {
+    margin-right: 10px;
+}
+
+.collapesCol {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    max-width: 250px !important;
+    white-space: nowrap !important;
+}
+
+.additional_image_link {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    max-width: 100% !important;
+    margin-top: 30px;
+}
+
+ul.nav-tabs {
+    border: none;
+    border-bottom: 1px solid #ddd !important;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+    .modal-lg {
+        max-width: 1320px;
+    }
+}
+
+.alert {
+    display: block;
+}
+
+.card-carousel .card-img>img {
+    width: 100%;
+}
+
+.card-carousel .thumbnails {
+    border: 1px solid #e5e5e5;
+    justify-content: start !important;
+    flex-wrap: wrap;
+}
+
+.card-carousel .thumbnails .thumbnail-image {
+    width: 75px;
+    padding: 5px;
+}
+
+.vqb-group-body.card-body {
+    padding: 0;
+}
+
+.b-avatar {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.my-theme thead tr {
+    background-color: #f3f2f7;
+}
+
+table.sidebar.table.table-bordered {
+    word-break: break-all;
+}
+
+.card-img img {
+    object-fit: contain;
+    height: 300px;
+    object-position: 50% 0%;
+}
+
+.thumbnail-image>img {
+    object-fit: contain;
+    max-height: 100px;
+}
+
+.vgt-inner-wrap {
+    box-shadow: none !important;
+}
+
+.custom-search select {
+    max-width: 120px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.d-inline {
+    white-space: nowrap;
+}
+
+.vqb-group.card.depth-2 {
+    background-color: #f5f5f5;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.vue-query-builder .vqb-group.depth-2 .vqb-rule,
+[dir=ltr] .vue-query-builder .vqb-group.depth-3 {
+    background-color: #f5f5f5;
+    border: 2px solid #ddd !important;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.modal-body {
+    padding: 1.4rem 1.4rem;
+}
